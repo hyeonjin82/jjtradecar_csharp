@@ -18,8 +18,7 @@ namespace FinalProject
         private SqlConnection myConn = null;
         private int rowNum = -1;
         private string invoiceID = null;
-        private string connStr =
-     "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\C#class\\FinalProject\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True";
+        string connStr = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=D:\\jin_source\\C#class\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True";
 
         private Thread th;
 

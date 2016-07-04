@@ -24,10 +24,10 @@ namespace FinalProject
         private string vin = "";
         private Thread th;
         private string genInvNo;
-       
+
         private string connStr =
-            "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\C#class\\FinalProject\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True";
-        
+            "Data Source=(LocalDB)\\v11.0;AttachDbFilename=D:\\jin_source\\C#class\\FinalProject\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True";
+
         private double ratePerMileage = 0.1;
         private double ratePerHour = 1.0;
 
@@ -56,10 +56,10 @@ namespace FinalProject
         void txtEndMileage_KeyPress(object sender, KeyPressEventArgs e)
         {
             char c = e.KeyChar;
-                if ((c != 8) && (c < 48 || c > 57))
-                {
-                    e.Handled = true;
-                }
+            if ((c != 8) && (c < 48 || c > 57))
+            {
+                e.Handled = true;
+            }
         }
 
         private void getData()
@@ -136,7 +136,7 @@ namespace FinalProject
                 MessageBox.Show(ex.Message, "Error Reading Data");
             }
 
-            lblconfno.Text ="Reservation: " + confno + ", Name: " + cname + ",  VIN: " + vin;
+            lblconfno.Text = "Reservation: " + confno + ", Name: " + cname + ",  VIN: " + vin;
 
             // get Car Infomation from DB
             try
@@ -201,10 +201,11 @@ namespace FinalProject
                 double doubleStartMileage = Convert.ToDouble(odometer);
                 double doubleEndMileage = Convert.ToDouble(newOdometer);
                 double mileage = doubleEndMileage - doubleStartMileage;
-                
-                if(mileage <= 0)
+
+                if (mileage <= 0)
                 {
-                    MessageBox.Show("Error: Incorrect Mileage");
+                    MessageBox.Show("Smaller than the start mileage. Please input current total Mileage again.");
+                    return;
                 }
                 else
                 {
@@ -214,14 +215,14 @@ namespace FinalProject
                     totalTime = Convert.ToDouble(span.TotalHours.ToString("F"));
                     timeCost = totalTime * ratePerHour;
                     amount = mileageCost + timeCost;
-                    MessageBox.Show(" Mileage: " + mileage.ToString() +" km \n"+
-                                    "Cost for Mileage: $ " +mileageCost.ToString() +
+                    MessageBox.Show(" Mileage: " + mileage.ToString() + " km \n" +
+                                    "Cost for Mileage: $ " + mileageCost.ToString() +
                                     "\n Hours: " + totalTime.ToString() + " hrs \n" +
                                     " Cost for Time: $ " + timeCost.ToString() +
                                     "\n Total Amount: " + amount.ToString());
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error: Invalid Mileage Data");
             }
@@ -240,9 +241,9 @@ namespace FinalProject
                 cmd2.Parameters.Add("@invoiceID", SqlDbType.VarChar, 20).Value = genInvNo;
                 cmd2.Parameters.Add("@invDateTime", SqlDbType.DateTime).Value = DateTime.Now.ToString("h:mm:ss tt");
                 cmd2.Parameters.Add("@agreementID", SqlDbType.VarChar, 20).Value = rentalAgreementID;
-            
+
                 // cmd.Parameters.Add("@invoiceID", SqlDbType.VarChar, 20).Value = "1030";
-                
+
                 //SqlParameter param = new SqlParameter("@amount", SqlDbType.Decimal);
                 //param.SourceColumn = amount.ToString();
                 //param.Precision = 9;

@@ -53,10 +53,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(220, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(262, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 32);
+            this.label1.Size = new System.Drawing.Size(197, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reservation Form";
             // 
@@ -64,113 +63,101 @@
             // 
             this.dg1.AllowUserToDeleteRows = false;
             this.dg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg1.Location = new System.Drawing.Point(17, 72);
-            this.dg1.Margin = new System.Windows.Forms.Padding(4);
+            this.dg1.Location = new System.Drawing.Point(13, 96);
             this.dg1.Name = "dg1";
             this.dg1.ReadOnly = true;
             this.dg1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dg1.Size = new System.Drawing.Size(647, 48);
+            this.dg1.Size = new System.Drawing.Size(648, 49);
             this.dg1.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 192);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(31, 206);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 17);
+            this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Customer Name:";
             // 
             // txtCName
             // 
-            this.txtCName.Location = new System.Drawing.Point(143, 189);
-            this.txtCName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCName.Location = new System.Drawing.Point(120, 204);
             this.txtCName.Name = "txtCName";
-            this.txtCName.Size = new System.Drawing.Size(185, 22);
+            this.txtCName.Size = new System.Drawing.Size(208, 20);
             this.txtCName.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 224);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(63, 232);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Address:";
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(143, 224);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Location = new System.Drawing.Point(120, 232);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(499, 22);
+            this.txtAddress.Size = new System.Drawing.Size(526, 20);
             this.txtAddress.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(400, 262);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(390, 263);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 17);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Phone :";
             // 
             // txtPNum
             // 
-            this.txtPNum.Location = new System.Drawing.Point(457, 259);
-            this.txtPNum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPNum.Location = new System.Drawing.Point(440, 260);
             this.txtPNum.MaxLength = 12;
             this.txtPNum.Name = "txtPNum";
-            this.txtPNum.Size = new System.Drawing.Size(185, 22);
+            this.txtPNum.Size = new System.Drawing.Size(206, 20);
             this.txtPNum.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(366, 189);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(364, 204);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 17);
+            this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "License No. :";
             // 
             // txtLic
             // 
-            this.txtLic.Location = new System.Drawing.Point(457, 189);
-            this.txtLic.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLic.Location = new System.Drawing.Point(440, 204);
             this.txtLic.Name = "txtLic";
-            this.txtLic.Size = new System.Drawing.Size(185, 22);
+            this.txtLic.Size = new System.Drawing.Size(206, 20);
             this.txtLic.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(84, 259);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(76, 260);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "Email:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(143, 259);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(120, 260);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(185, 22);
+            this.txtEmail.Size = new System.Drawing.Size(208, 20);
             this.txtEmail.TabIndex = 13;
             // 
             // txtRes
             // 
             this.txtRes.BackColor = System.Drawing.Color.RoyalBlue;
             this.txtRes.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtRes.Location = new System.Drawing.Point(490, 291);
-            this.txtRes.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRes.Location = new System.Drawing.Point(532, 293);
             this.txtRes.Name = "txtRes";
-            this.txtRes.Size = new System.Drawing.Size(152, 37);
+            this.txtRes.Size = new System.Drawing.Size(114, 30);
             this.txtRes.TabIndex = 16;
             this.txtRes.Text = "Reservation";
             this.txtRes.UseVisualStyleBackColor = false;
@@ -180,10 +167,9 @@
             // 
             this.cmdCusFind.BackColor = System.Drawing.Color.RoyalBlue;
             this.cmdCusFind.ForeColor = System.Drawing.SystemColors.Info;
-            this.cmdCusFind.Location = new System.Drawing.Point(17, 139);
-            this.cmdCusFind.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdCusFind.Location = new System.Drawing.Point(13, 151);
             this.cmdCusFind.Name = "cmdCusFind";
-            this.cmdCusFind.Size = new System.Drawing.Size(152, 31);
+            this.cmdCusFind.Size = new System.Drawing.Size(114, 25);
             this.cmdCusFind.TabIndex = 19;
             this.cmdCusFind.Text = "Find";
             this.cmdCusFind.UseVisualStyleBackColor = false;
@@ -193,10 +179,9 @@
             // 
             this.cmdMainApp.BackColor = System.Drawing.Color.Teal;
             this.cmdMainApp.ForeColor = System.Drawing.SystemColors.Info;
-            this.cmdMainApp.Location = new System.Drawing.Point(3, 9);
-            this.cmdMainApp.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdMainApp.Location = new System.Drawing.Point(2, 7);
             this.cmdMainApp.Name = "cmdMainApp";
-            this.cmdMainApp.Size = new System.Drawing.Size(152, 37);
+            this.cmdMainApp.Size = new System.Drawing.Size(114, 30);
             this.cmdMainApp.TabIndex = 20;
             this.cmdMainApp.Text = "Main App";
             this.cmdMainApp.UseVisualStyleBackColor = false;
@@ -204,10 +189,10 @@
             // 
             // Reserv
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(677, 338);
+            this.ClientSize = new System.Drawing.Size(673, 337);
             this.Controls.Add(this.cmdMainApp);
             this.Controls.Add(this.cmdCusFind);
             this.Controls.Add(this.txtRes);
@@ -224,7 +209,6 @@
             this.Controls.Add(this.dg1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Reserv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

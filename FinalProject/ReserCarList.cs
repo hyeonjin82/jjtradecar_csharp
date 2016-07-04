@@ -34,7 +34,7 @@ namespace FinalProject
 
         private void getData()
         {
-            string connStr = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\C#class\\FinalProject\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True";
+            string connStr = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=D:\\jin_source\\C#class\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True";
             try
             {
                 conn = new SqlConnection(connStr);

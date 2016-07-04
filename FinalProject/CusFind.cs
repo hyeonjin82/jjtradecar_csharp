@@ -14,7 +14,7 @@ namespace FinalProject
 {
     public partial class CusFind : Form
     {
-        private SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\C#class\\FinalProject\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True");
+        private SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=D:\\jin_source\\C#class\\FinalProject\\FinalProject\\RentCar.mdf;Integrated Security=True");
         private SqlDataAdapter da = null;
         private DataSet ds = null;
         private int rowIndex = -1;
